@@ -1,0 +1,4 @@
+HTML Element: HTML is collection of html elements/markup tags
+
+HTML ELEMENT:
+<p>This is content</p>
