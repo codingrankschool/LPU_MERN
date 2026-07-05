@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Internal CSS</title>
+
+    <style>
+        /* Internal CSS */
+
+        *{
+            background-color: aqua;
+        }
+
+        /* tag selector */
+        h2{
+            background-color: red;
+            color: white;
+        }
+
+        /* group selectors */
+        h2, p{
+            background-color: red;
+            color: white;
+        }
+
+        /* type/attribute selector */
+        input[type="email"]{
+            background-color: teal;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h2>Welcome to Internal Sytle</h2>
+    <p>Student- 1</p>
+    <p>Student- 2</p>
+    <p>Student- 3</p>
+    <p>Student- 4</p>
+    <p>Student- 5</p>
+    <p>Student- 6</p>
+
+    <br>
+    <input type="text" placeholder="Enter Name">
+    <br>
+    <input type="email" placeholder="Enter Email">
+
+    <br><br><br><br><br><br>
+
+    <!-- With help of Internal or External CSS we can solve the problem of inline css:
+    
+    Internal CSS: In this you write your css inside same html file but seperatly
+    External CSS: In this you write your css outside the html file inside seperate css file.
+
+    To work with internal and external css we must know how to select html element to style:
+
+    SOLUTION: CSS Selectors - to select particular html element for styling.
+
+    1. tag/type selector
+    2. id selector
+    3. class selector
+    4. universal selector
+    5. group selector
+    6. combinators
+    7. pseduo classes, and pseudo elements
+    -->
+    
+</body>
+</html>

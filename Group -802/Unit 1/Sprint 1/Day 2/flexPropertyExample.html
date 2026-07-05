@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flex Property Example</title>
+
+    <style>
+
+        /* Flex properties:
+        Parent Property:
+        1. flex-direction
+        2. flex-wrap
+        3. align-items
+        4. justify-content
+        5. align-content
+        Child Property:
+        1.flex-shrink
+        2.flex-grow
+        3.order
+        4. flex-basis
+        */
+
+        #container{
+            border: 2px solid;
+            padding: 10px;
+            display: flex;
+            /* flex-direction: column-reverse;
+            */
+            /* justify-content: space-evenly;
+            */
+            /* align-items: start;*/
+            /* flex-wrap: wrap; */
+            /* align-content: space-around; */
+        }
+
+        #container>div{
+            border: 1px solid teal;
+            width: 50px;
+            height: 20px;
+           /* flex-grow: 1; */
+           /* flex-shrink: 1; */
+           order: 0;
+
+            /* text-align: center; */
+        }
+
+        #container>div:nth-child(3){
+            /* flex-shrink: 4; */
+            order: -1;
+            flex-basis: 200px;
+        }
+
+        
+        #container>div:nth-child(4){
+            /* flex-shrink: 4; */
+            order: -3;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- CSS Flex Property
+    - To align items/childs in one dimensionthen we can use flex property
+    
+    One dimension: either in veritical/cross/axis/column wise or horizontal/main axis/row wise
+
+    Note: display value as flex to the element whose child you want to align in above any of the direction.
+    -->
+    
+
+    <div id="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+
+        <!-- <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div> -->
+    </div>
+
+</body>
+</html>

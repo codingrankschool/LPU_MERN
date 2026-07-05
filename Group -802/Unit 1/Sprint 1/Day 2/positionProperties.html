@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Position Properties</title>
+
+    <style>
+
+        #container{
+            border: 1px solid green;
+            padding: 10px;
+            height: 1000px;
+            position: relative;
+        }
+
+        #container>div{
+            width: 100px;
+            height: 100px;
+        }
+
+         #container>div:nth-child(1){
+            background-color: red;
+            /* position: relative;
+            left: 10px;
+            top: 20px;
+            z-index: -1; */
+            position: fixed;
+            /* z-index: -1; */
+            right: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #container>div:nth-child(2){
+            background-color: green;
+            /* position: relative;
+            z-index: -2; */
+        }
+
+        #container>div:nth-child(3){
+            background-color: orange;
+        }
+
+        #container>div:nth-child(4){
+            background-color: aqua;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- There are following css position properties:
+    1. static - by default all the html element having the position as static
+    2. relative
+    3. absolute
+    4. fixed
+    5. sticky
+
+    each position property value have some sub properties:
+    left, right, botthom, top, z-index
+
+    above sub properties only work when have postion property value as anything instead of static.
+    -->
+
+    <div id="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Selectors Priorities</title>
+
+    <style>
+
+        *{
+            color: red;
+            font-weight: 700;
+        }
+
+        p{
+          color: teal;  
+        }
+
+        .para{
+            color:black
+        }
+        #special{
+            color: aqua;
+        }
+
+
+    </style>
+        
+</head>
+<body>
+
+    <p>Paragram - 1</p>
+    <p class="para">Paragram - 2</p>
+    <p style="color: black;" id="special" class="para">Paragram - 3</p>
+    <p class="para">Paragram - 4</p>
+    <p>Paragram - 5</p>
+    <p>Paragram - 6</p>
+    <p>Paragram - 7</p>
+    <p>Paragram - 8</p>
+    <p>Paragram - 9</p>
+    <p>Paragram - 10</p>
+    
+</body>
+</html>
+
+<!-- Priorrity of Selectors:
+1. INLINE CSS - 1000
+2. Id - 100
+2. Class - 10
+3. Tag/Type - 1
+4. Universial(*) - 0   
+
+-->

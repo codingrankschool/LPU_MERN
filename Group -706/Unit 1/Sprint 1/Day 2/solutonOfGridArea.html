@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grid Area</title>
+
+    <style>
+
+        #container{
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+            gap: 10px;
+            grid-template-areas: 
+            "tl tl tl"
+            "tl tl tl"
+            "grn rd aq"
+            ;
+        }
+        #container>div:nth-child(1){
+
+            background-color: teal;
+            grid-area: tl;
+        }
+
+        #container>div:nth-child(2){
+            background-color: aqua;
+            grid-area: aq;
+        }
+
+        #container>div:nth-child(3){
+            background-color: red;
+            grid-area: rd;
+        }
+
+        #container>div:nth-child(4){
+            background-color: yellow;
+            grid-area: yl;
+        }
+
+        #container>div:nth-child(5){
+           background-color: green; 
+           grid-area: grn;
+        }
+
+        #container>div:nth-child(6){
+            background-color: brown;
+            grid-area: brw;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <br><br><br><br><br><br>
+
+    <div id="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+</body>
+</html>

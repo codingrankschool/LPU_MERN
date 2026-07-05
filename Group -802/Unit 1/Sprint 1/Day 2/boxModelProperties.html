@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Box Model</title>
+
+    <style>
+
+        *{
+            margin:0
+        }
+        
+        div{
+            width: 100px;
+            height: 100px;
+            /* background-color: red; */
+            border: 1px solid red;
+            /* border-left: 2px dotted teal; */
+            /* margin: 10px 20px 30px 40px; */
+            /* margin:10px; */
+            /* margin: 10px 20px; */
+            padding:10px 20px;
+            box-sizing: border-box;
+
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- How to create box:
+    requirement:
+    1. div element
+    2. height
+    3. width 
+
+    margin:space outside the box/border
+    padding: space between border and content or space within the box
+
+    Note: on increasing padding and border box height  and width incrases
+
+    why above happens:
+
+    box-sizzing: content-box
+    how to stop:
+    box-sizzing: border-box
+    -->
+
+    <div>
+
+        I'm data
+
+    </div>
+    
+</body>
+</html>
