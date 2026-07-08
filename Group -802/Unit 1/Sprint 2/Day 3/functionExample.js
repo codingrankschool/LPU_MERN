@@ -98,12 +98,28 @@
 4. Callback function
 5. Higher Order Funciton
 6. Constructor Function
-7.Recursive Function 
+7. Recursive Function 
 8. Arrow Function
 9. Generator Function
 */
 
-//https://test.skilltrixa.com/login
+//Function expression or anonymous function
+var func = function(){
+    
+    console.log("Anonymous Function")
+
+}
+
+func()
+
+//Student Task:
+//There are lots of inbuilt function in javascript:
+//Inbuilt function for arrays
+//Inbuilt function for strings
+//Inbuilt function maths - ceil, floor, round, random, max, min, pow, abs, and others.
+
+
+
 
 
 
