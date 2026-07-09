@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document - Object Model</title>
+</head>
+<body>
+
+    <h1 class="common" id="heading">Welcome to Document Object Model</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ex magnam labore. Aliquid officia, voluptatibus eveniet commodi, necessitatibus ducimus id earum itaque rerum aperiam velit incidunt veniam consequatur, sapiente nihil.z</p>
+    
+</body>
+</html>
+
+<!-- 
+Why Document Object Model?
+
+Html knows JS or not?
+JS knows html or not?
+
+with the help of document object model.
+
+When your HTML document loads on browser it internally becomes object that object is document object.
+
+using this document object your javascript and communite to html.
+
+-->
+
+
+<script>
+    // console.log(document)
+    // console.log(document.title)
+    // console.log(document.body.childNodes[1]) 
+
+    // document.body.childNodes[1].textContent = "WELCOME TO JAVASCRIPT"
+
+    //above approach is tds approach, we have another modern appoarches
+
+
+    //There are lots of document methods to select particular html element:
+
+    //1. getElementById('idname')
+    //2. getElementsByTagName('tagName')
+    //3. getElementsByClassName('tagName')
+
+    // var headingElement = document.getElementById('heading')
+
+    // console.log(headingElement)
+
+    //to change content inside any html element we have two ways:
+    //1. using innerText
+    //2. using textContent
+    //3, using innerHMTL
+
+    // headingElement.innerText = "Welcome"
+
+
+    // var headingElements = document.getElementsByTagName('h1')
+ 
+    // // console.log(headingElements)
+
+    // headingElements[0].innerText = "Hello"
+
+
+    // var headingElements = document.getElementsByClassName('common')
+ 
+    // // console.log(headingElements)
+
+    // headingElements[0].innerText = "Simran"
+
+    //Best approach:
+    // var headingElement = document.querySelector("#heading")
+
+    // // console.log(headingElement)
+    // headingElement.innerText = "hELLO"
+
+    //  var headingElement = document.querySelector("h1")
+
+    // // console.log(headingElement)
+    // headingElement.innerText = "hELLO"
+
+
+    // var headingElement = document.querySelector(".common")
+
+    // // console.log(headingElement)
+    // headingElement.innerText = "hELLO"
+
+    // var headingElements = document.querySelectorAll('#heading')
+
+    // console.log(headingElements)
+
+    // headingElements[0].innerText = "Hello"
+
+    // var headingElements = document.querySelectorAll('.common')
+
+    // console.log(headingElements)
+
+    // headingElements[0].innerText = "Hello"
+
+     var headingElements = document.querySelectorAll('h1')
+
+    console.log(headingElements)
+
+    headingElements[0].innerText = "Hello"
+
+
+
+</script>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Events in Document Object Model</title>
+</head>
+<body>
+
+    <!-- <button ondblclick="dblClickFun()" onclick="clickFun()">Click</button> -->
+
+
+    <p>Counter: <span id="counter">0</span></p>
+
+    <!-- <button onclick="increment()">Increment</button>
+    <button onclick="decrement()">Decrement</button> -->
+
+    <button id="increment">Increment</button>
+    <button id="decrement">Decrement</button>
+    
+</body>
+</html>
+
+<script>
+
+    // var body = document.querySelector('body')
+
+    // function clickFun(){
+    //     // console.log("Somebody clicked")
+
+    //     // alert("Somebody clicked")
+
+    //     body.style.backgroundColor = "red"
+    // }
+
+
+    // function dblClickFun(){
+    //     body.style.backgroundColor = "yellow"
+    // }
+
+    //addEventListener('event', function(){})
+
+
+    document.getElementById('increment').addEventListener('click', function(){
+        increment()
+    })
+
+    document.getElementById('decrement').addEventListener('click', function(){
+        decrement()
+    })
+
+    var displayCount = document.getElementById('counter')
+
+    var count = 0
+
+    function increment(){
+        count++
+        displayCount.innerText = count
+    }
+
+    function decrement(){
+        if(count > 0){
+        count--
+        displayCount.innerText = count
+        }
+    }
+
+
+
+</script>

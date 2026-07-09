@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Events Example</title>
+</head>
+<body>
+
+    <!-- <button ondblclick="dblClickFun()" onclick="clickFun()">Click</button> -->
+
+    <p>Count: <span id="counter">0</span></p>
+
+    <!-- <button onclick="increment()">Increment</button>
+    <button onclick="decrement()">Decreemnt</button> -->
+
+     <button id="increment">Increment</button>
+    <button id="decrement">Decreemnt</button>
+
+    
+    
+</body>
+</html>
+
+<script>
+
+    // var body = document.querySelector('body')
+
+    // function clickFun(){
+    //     // console.log("Somebody CLicked")
+    //     // alert("Somebody Clicked")
+    //     body.style.backgroundColor = "red"    
+    // }
+
+    // function dblClickFun(){
+
+    //      body.style.backgroundColor = "yellow" 
+    // }
+
+    var incBtn = document.getElementById('increment');
+
+    var decBtn = document.getElementById('decrement');
+
+      var displayCount = document.getElementById('counter')
+
+    var count = 0
+
+    incBtn.addEventListener('click',function(){
+        //count++
+        displayCount.innerText = ++count
+    })
+
+     decBtn.addEventListener('click', function(){
+        //count--
+        if(count>0){
+            displayCount.innerText = --count
+        }
+    })
+
+  
+
+    // var incrementFun = function(){
+    //     //count++
+    //     displayCount.innerText = ++count
+    // }
+
+    // var decrement = function(){
+    //     //count--
+    //     if(count>0){
+    //         displayCount.innerText = --count
+    //     }
+    // }
+
+
+
+</script>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Data from Form</title>
+
+    <style>
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+            border: 2px solid red;
+        }
+        
+        #student-container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: minmax(200px,1fr);
+            gap: 10px;
+        }
+
+        #student-container>div{
+            
+            height: 200px;
+            border: 1px solid red;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <form>
+
+        <input name="name" type="text" placeholder="Enter Name">
+
+        <input name="email" type="email" placeholder="Enter Email">
+
+        <input name="password" type="password" placeholder="Enter Password">
+
+        <input type="submit" value="Register">
+
+    </form>
+
+    <div id="student-container">
+
+    </div>
+    
+</body>
+</html>
+
+<script>
+
+    var form = document.querySelector('form')
+
+    var studentContainer = document.getElementById('student-container')
+
+    var students = []
+
+    form.addEventListener('submit', function(event){
+        event.preventDefault()
+        // console.log("clicked on submit")
+
+        // var nameInput = document.getElementById('name')
+
+        // var emailInput = document.getElementById('email')
+
+        // var passwordInput = document.getElementById('password')
+
+        // var name = nameInput.value
+        // var email = emailInput.value
+        // var password = passwordInput.value
+
+        // console.log(name, email, password)
+
+        //modern approach
+        // var name = form.name.value
+        // var email = form.email.value
+        // var password = form.password.value
+
+        // console.log(name, email, password)
+
+        var student = {
+            name: form.name.value,
+            email:form.email.value,
+            password: form.password.value 
+        }
+
+        // console.log(student)
+
+        students.push(student)
+
+        displayStudent(students)
+
+    })
+
+
+    function displayStudent(students){
+
+        studentContainer.innerText = ""
+        students.forEach(function(student){
+            var studentCard = document.createElement('div')
+
+            var name = document.createElement('h2')
+            name.innerText = student.name
+
+            var email = document.createElement('p')
+            email.innerText = student.email
+
+            var password = document.createElement('p')
+
+            password.innerText = student.password
+
+            studentCard.append(name, email, password)
+
+            studentContainer.append(studentCard)
+        })
+    }
+
+</script>

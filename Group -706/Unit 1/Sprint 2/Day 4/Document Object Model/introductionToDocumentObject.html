@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Document Object</title>
+</head>
+<body>
+
+    <h1 class="common" id="heading">Welcome to Document Object Model</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ab illum asperiores, modi dolorem a at velit nemo omnis maiores harum, cum vero, reiciendis rerum commodi eligendi dolorum dolor quasi.</p>
+    
+</body>
+</html>
+
+<!-- 
+Document Object Model:
+Why DOM?
+
+Your Javascript doesn't know about HTML
+
+Your HTML doesn't know about Javascript
+
+Once they don't know each then how will communication/Intractivity become possible
+
+
+Solution: Through Document object.
+
+How?
+
+When your html document loads on broser internally it becomes documebnt objct and using this document your javascript can communicate to html.
+
+-->
+
+<script>
+    // console.log(document)
+    // // console.log("Komal")
+    // console.log(document.title)
+    // console.log(document.body)
+
+    // console.log(document.body.childNodes[1])
+
+
+    // document.body.childNodes[1].innerText = "Are you all getting?"
+
+
+    //above approach is tds approach, and what is the solution?
+
+    //We have modern methods inside document object to select particular html element easily.
+
+
+    /*
+    1. getElementById('idName')
+    2. getElementsByTagName('tagName')
+    3. getElementsByClassName('className')
+
+    //Recommended methods
+    4. querySelector('id, class, tag, others')
+    5. querySelectorAll('id, class, tag, others')
+    */
+
+    // var headingOne = document.getElementById('heading')
+
+    // console.log(headingOne)
+
+    //How to change/add content inside particular html element?
+    //1. innerText, textContent
+    //2. innerHTML
+
+    // headingOne.innerText = "Yes got it"
+
+    //  var headingElement = document.getElementsByTagName('h1')
+
+    //  console.log(headingElement)
+
+    //  headingElement[0].innerText = "Got it?"
+
+
+    // var headingElement = document.getElementsByClassName('common')
+
+    //  console.log(headingElement)
+
+    //  headingElement[0].innerText = "Got it?"
+
+
+    // var headingOne = document.querySelector('h1')
+
+    // headingOne.innerText = "Got it?"
+
+
+    //  var headingOne = document.querySelector('.common')
+
+    // headingOne.innerText = "Got it?"
+
+    // var headingOne = document.querySelector('#heading')
+
+    // headingOne.innerText = "Got it?"
+
+
+    // var headingElements = document.querySelectorAll('h1')
+
+    // console.log(headingElements)
+
+    // headingElements[0].innerText = "Got it?"
+
+    // var headingElements = document.querySelectorAll('#heading')
+
+    // console.log(headingElements)
+
+    // headingElements[0].innerText = "Got it?"
+
+    // var headingElements = document.querySelectorAll('.common')
+
+    // console.log(headingElements)
+
+    // headingElements[0].innerText = "Got it?"
+
+
+</script>

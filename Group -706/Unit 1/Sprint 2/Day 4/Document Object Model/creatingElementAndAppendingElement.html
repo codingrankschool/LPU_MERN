@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Creating Element and Appending(adding to html) Element</title>
+
+    <style>
+
+        /* #heading{
+            background-color: red;
+        } */
+
+    </style>
+
+</head>
+<body>
+
+    <div id="box">
+
+    </div>
+    
+</body>
+</html>
+
+<script>
+
+    var box = document.getElementById('box')
+
+    // console.log(box)
+
+    var studentName = document.createElement('h2')
+
+    studentName.style.backgroundColor = "white"
+    studentName.style.padding = "10px"
+
+    // studentName.setAttribute('class', "common")
+    
+    studentName.id = "heading"
+
+    studentName.innerText = "Champak Lal"
+
+
+    var studentAddress = document.createElement('p')
+
+    studentAddress.innerText = "Noida, Uttar Pradesh"
+
+    var connectBtn = document.createElement('button')
+
+    connectBtn.innerText = "Connect"
+
+    // console.log(studentName, studentAddress, connectBtn)
+
+    box.append(studentName, studentAddress, connectBtn)
+
+    box.style.backgroundColor = "teal"
+    box.style.textAlign= "center"
+    box.style.padding = "10px"
+
+    box.style.display = "inline-block"
+
+    box.style.borderRadius = "10px"
+
+
+
+</script>

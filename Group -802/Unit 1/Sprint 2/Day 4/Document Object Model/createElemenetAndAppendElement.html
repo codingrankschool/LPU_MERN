@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Creating Element and Appending Element</title>
+
+    <style>
+
+        /* #box{
+            background-color: teal;
+            display: inline-block;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        #heading{
+            background-color: white;
+            padding-inline: 10px;
+        } */
+
+    </style>
+
+</head>
+<body>
+
+    <div id="box">
+
+    </div>
+    
+</body>
+</html>
+
+<script>
+
+    //createElement('div, button, others')
+    var headingOne = document.createElement('h1')
+    headingOne.innerText = "Pankaj Singh"
+    // headingOne.setAttribute('id', 'heading')
+    headingOne.id = "heading"
+
+    headingOne.style.backgroundColor="white"
+    headingOne.style.padding = "10px"
+
+    var para = document.createElement('p')
+    para.innerText = "He is Engineer"
+
+    var button = document.createElement('button')
+    button.innerText = "Register"
+
+    //console.log(headingOne)
+
+    var box = document.getElementById('box')
+    box.append(headingOne, para, button)
+
+    box.style.backgroundColor = "teal"
+    box.style.display = "inline-block"
+    box.style.padding = "10px"
+    box.style.borderRadius = "10px"
+
+
+
+</script>
