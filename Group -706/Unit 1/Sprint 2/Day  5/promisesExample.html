@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Promises in javascript</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<script>
+
+    //Promise: A committement by someone to someone
+
+    //In javascript: promise is an object which has following states:
+    //1. resolved
+    //2. rejected
+    //3. pending
+
+    // console.log("Task 1")
+    // console.log("Task 2")
+
+    // let jobPromise = new Promise(function(resolve, reject){
+
+    //     // reject("Job Lag Gai!")
+    //     let students = ["Rakesh", "Deepak", "Suresh"]
+    //     resolve(students)
+
+    // })
+
+    // console.log("Task 3")
+    // console.log("Task 4")
+
+    // console.log(jobPromise)
+
+    //above jobPromise object is returning promise object but i need exact result promise is returning for this i need to consume the promise.
+
+    //There are following two ways to consume promise.
+
+    //1. using .then() and .catch()
+    //.then -> when promise resolved
+    //.catch -> when promise rejected.
+
+    // jobPromise.then(function(data){
+    //     return data.map(function(data){return data.toUpperCase()})
+    // }).then(function(data){
+    //     console.log(data)
+    // })
+    // .catch(function(error){
+    //     console.log(error)
+    // })
+
+    //async and await
+
+
+    function getUsersData(){
+        return new Promise(function(resolve, reject){
+            resolve(["Chinki", "Babli", "Rohan"])
+        })
+    }
+
+
+    // console.log(getUsersData())
+
+    //first way:
+
+    // getUsersData().then(function(data){
+    //     console.log(data)
+    // }).catch(function(errr){
+    //     console.log(err)
+    // })
+
+
+    //using async and await
+
+
+    async function displayUserData(){
+        let data = await getUsersData()
+        console.log(data)
+    }
+
+    displayUserData()
+
+</script>

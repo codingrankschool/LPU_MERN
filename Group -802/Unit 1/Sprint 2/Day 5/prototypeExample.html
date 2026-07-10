@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype in javascript</title>
+</head>
+<body>
+
+    <h2>Prototype in javascript</h2>
+    
+</body>
+</html>
+
+<script>
+
+    // javascript
+
+    // let nums = [1,2,3,4,5] //--->  new Array(1,2,3,4,5)
+    // console.log(nums)   
+
+    // nums.toString
+
+
+    /*
+    [1,2,3,4,5] --> new Array() ---> Object
+    */
+
+
+    function Student(name, address, course){
+
+    //states
+    this.name = name
+    this.address = address
+    this.course = course
+}
+
+
+// Student.prototype.printStudentDetials = function(){
+//         console.log("Student Name: ", this.name)
+//         console.log("Student Address: ", this.address)
+//         console.log("Student Course: ", this.course)
+//     }
+
+
+// let student1 = new Student("Rakesh", "Noida", "BTECH")
+// //console.log(student1)
+// let student2 = new Student("Pankaj", "Noida", "BTECH")
+// // console.log(student2)
+// // student2.printStudentDetials()
+
+// function checkJobEligibility(age){
+//     console.log(this.name, age)
+
+//     if(age>22 && this.course=="BTECH"){
+//         console.log("Eligible for job")
+//     }
+// }
+
+// checkJobEligibility.call(student1, 25, "WELOME")
+// checkJobEligibility.call(student1, [25, "WELOME"])
+
+//call, apply, bind
+
+</script>

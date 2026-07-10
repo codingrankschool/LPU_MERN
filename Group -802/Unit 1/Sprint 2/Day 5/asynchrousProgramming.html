@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Asynchronous Programming Language</title>
+  </head>
+  <body></body>
+</html>
+
+<script>
+  //Javascript is by default synchronous, blocking, and single threaded programming language.
+
+  //Synchronous: one by one or in sequence
+
+  // console.log('Task 1')
+  // console.log('Task 2')
+  // console.log('Task 3')
+  // console.log('Task 4')
+
+  //another example:
+
+//   console.log("Task 1");
+//   console.log("Task 2");
+
+//   for (var i = 0; i < 10000000000; i++) {
+
+//     if (i === 0) console.log("Loop Started");
+    
+//     if (i === 100000000000) {
+//     console.log("Loop Ended");
+//     }
+
+//   }
+
+//   console.log("Task 3");
+//   console.log("Task 4");
+
+    //Below are browser api methods which make a programming as asynchronous possible in javascript, which are following:
+
+    //setTiemout - runs once time out.
+    // setTimeout(function(){
+
+    //     console.log("Timer is up")
+
+    // }, 5000)
+
+    // var count = 0
+    // let intervalId = setInterval(function() {
+    //     count++
+    //     console.log("Timer running", count)
+    //     if(count==10){
+    //         clearInterval(intervalId)
+    //         console.log("Timer stooped")
+    //     }
+    // }, 1000);
+
+
+    console.log("Task 1")
+    console.log("Task 2")
+
+    //there is code which takes 2 secs
+    setTimeout(function(){
+        console.log("Time finised")
+    }, 2000)
+
+    console.log("Task 3")
+    console.log("Task 4")
+
+
+
+
+</script>
