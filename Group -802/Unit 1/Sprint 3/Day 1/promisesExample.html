@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Promises in Javascript</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    // Promise: a committement by someone to someone
+    //In javascript: promise is a contract where it has following states:
+    //1. pending
+    //2. fulfullied/completed/resolved
+    //3. rejected/incompleted/failed
+
+    //Technically: Promise is an object which is used to handle async behaviour and end up with above states.
+
+    //How to create promise object
+
+    // let promiseObjet = new Promise(function(resolve, reject){
+    //             reject('While fetching users data got errors')
+    // })
+
+    // console.log(promiseObjet)
+
+
+    //Where do we use promises in real time?
+    //1. send request to backend for some data.
+    //2. requested any change to backend 
+
+
+    //Example:
+
+    // console.log("Task 1")
+    // console.log("Task 2")
+
+    //long delay code
+    //1. send request to backend for some data.
+    //2. requested any change to backend
+
+    // console.log("Task 3")
+    // console.log("Task 4")
+
+
+    //  let promiseObjet = new Promise(function(resolve, reject){
+
+    //             setTimeout(function(){
+    //                    let cities = ["Noida", "Delhi"]
+    //                     resolve(cities)
+    //             }, 2000)
+    // })
+
+    //console.log(promiseObjet)
+
+
+    //Asking you to create promise which returns data of students (array of object where each object only having name key and value) and mark it resolve after 3 secs
+
+
+     let getStudentsPromise = new Promise(function(resolve, reject){
+
+                setTimeout(function(){
+                       let students = [{name:"Seema"}, {name:"Babli"}]
+                        reject(students)
+                }, 3000)
+    })
+
+    // console.log(getStudentsPromise)
+
+
+    //How to consume promises, for this there are two different ways:
+    //1. .then(), and .catch()
+    //2. async and await
+
+
+      //1. using .then(resulved), and .catch(rejected)
+
+    //    getStudentsPromise.then(function(data){
+    //             console.log("data received.")
+    //             console.log(data)
+    //    }).catch(function(err){
+    //             console.log("data failed to recieve.")
+    //             console.log(err)
+    //    })
+
+
+    //using async and await
+
+
+    // async function getData(){
+    //      try {
+    //         let data = await getStudentsPromise
+    //         console.log(data)
+    //      } catch (error) {
+    //         console.log("error:",error)
+    //      }
+    // }
+
+    // getData()
+      
+
+
+</script>

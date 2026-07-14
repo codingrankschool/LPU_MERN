@@ -1,0 +1,14 @@
+React: It is a libaray to build intractive resuable UIs, and it best of single page application.
+
+
+JS - libaray ---> npm 
+In Nodejs, We have three types of modules:
+
+1. Inbuilt Modules - which came with nodejs itself
+2. Internal Modules - Which can create by develoers according to use
+3. External Modules - Which are already created by developers and now oper-source to use. 
+Note: All Externals modules are maintained npm - node package manager.
+
+
+COMMAND TO CREATE REACT APP:
+npx create-react-app app-name 
