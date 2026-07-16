@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Seema",
+    "age": 23,
+    "city": "Pune"
+  },
+  {
+    "name": "Komal",
+    "age": 19,
+    "city": "Phagwara"
+  },
+  {
+    "name": "name",
+    "age": "22",
+    "city": "Noida"
+  },
+  {
+    "name": "Manroop",
+    "age": "22",
+    "city": "Delhi"
+  },
+  {
+    "name": "Sunil",
+    "age": "22",
+    "city": "Delhi"
+  },
+  {
+    "name": "Sunil",
+    "age": "22",
+    "city": "Delhi"
+  }
+]

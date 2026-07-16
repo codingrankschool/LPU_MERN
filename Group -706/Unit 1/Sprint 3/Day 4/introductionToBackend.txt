@@ -1,0 +1,18 @@
+Introduction to Backend Development
+As a developer to create backend we generally to creation of server.
+
+SERVER(BACKEND) - Takes requeest and serve response
+
+How to create server using node.js
+1. using http module
+2. using express framework
+3. others
+
+
+Nodejs - Runtime Environment(V8 - Engine) + Inbuilt Modules(Using these module you can create server)
+
+Module: In javascript module is an object which is having some methods and properties.
+There are following types of Modules:
+1. Inbuilt Module - came with nodejs by default
+2. Internal Module - You can create according to requirement
+3. External Module - These modules are managed by NPM - Node Package Manager.

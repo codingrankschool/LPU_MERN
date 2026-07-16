@@ -1,0 +1,11 @@
+Nodejs(RunTime Environment(V8-JS Engine) + Inbuilt Modules(Which you can use in backend))
+Express - It is nodejs framework to create servers
+MongoDB - Database where we can store our data.
+
+
+Module:Which is having object and inside this object we have lots of methods and properties.
+
+There are following types of module:
+1. Inbuilt Modules  - these came with nodejs by default
+2. Internal Modules - which you create according to your requirement
+3. External Modules - They are managed by npm(node package manager) - express, react, jwt, mongoose

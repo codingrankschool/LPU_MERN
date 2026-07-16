@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Raghav",
+    "city": "Haryana"
+  },
+  {
+    "name": "Deepak",
+    "age": 34,
+    "city": "Noida"
+  },
+  {
+    "name": "Deepak",
+    "age": 34,
+    "city": "Noida"
+  },
+  {
+    "name": "Deepak",
+    "age": 34,
+    "city": "Noida"
+  },
+  {
+    "name": "Anand Singh Yadav",
+    "age": "25",
+    "city": "Delhi"
+  }
+]
