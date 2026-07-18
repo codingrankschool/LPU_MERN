@@ -1,9 +1,10 @@
 const mongoose = require('mongoose')
+require('dotenv').config
 
 
 let connectToMongoDB = async()=>{
     try {
-        await mongoose.connect(`mongodb://127.0.0.1:27017/tododb`)
+        await mongoose.connect(process.env.MONOGDB_URL)
         console.log("Connected to MongoDB Local Server!")
     } catch (error) {
         

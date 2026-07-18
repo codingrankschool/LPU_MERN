@@ -7,10 +7,17 @@ let todoSchema = mongoose.Schema({
     },
     priority: {
         type:String,
-        required:true
+        enum: ["Low", "Medium", "High"],
+        default: "Medium"
     },
+    completed:{
+        type:Boolean,
+        default:false
+    }
+    ,
     user: {
-        type:String,
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'User',
         required:true
     }
 

@@ -1,14 +1,20 @@
-const express = require('express')
-const todoController = require("../controllers/todo.controller")
+const express = require("express");
 
-const todoRouter = express.Router()
+const todoRouter = express.Router();
 
+const todoController = require("../controllers/todo.controller");
+const authMiddleware = require("../middlewares/auth.middleware");
 
-todoRouter.post("/", todoController.addTodo)
-todoRouter.get("/", todoController.getAllTodos)
+todoRouter.use(authMiddleware.authT);
 
-// Implement below at home
-// todoRouter.delete("/", todoController.getAllTodos)
-// todoRouter.put("/", todoController.getAllTodos)
+todoRouter.post("/", todoController.addTodo);
 
-module.exports = todoRouter
+todoRouter.get("/", todoController.getAllTodos);
+
+todoRouter.get("/:id", todoController.getTodoById);
+
+todoRouter.put("/:id", todoController.updateTodo);
+
+todoRouter.delete("/:id", todoController.deleteTodo);
+
+module.exports = todoRouter;
