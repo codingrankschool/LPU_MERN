@@ -49,7 +49,7 @@ const userController = {
 
       if(!isMatched) return res.status(401).send({status:false, msg:"Invaliad Password"})
 
-      var token = jwt.sign({ id: user._id, email: user.email }, process.env.JWT_SECRET_KEY, {expiresIn: '1h'});
+      var token = jwt.sign({ id: user._id, email: user.email, role:user.role }, process.env.JWT_SECRET_KEY, {expiresIn: '1h'});
 
       res.status(200).send({status:true, msg:"Logged In Successfully", token: token, user:user})
       

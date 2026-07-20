@@ -15,7 +15,17 @@ const authMiddleware = {
         } catch (error) {
             return res.status(401).send({status:false, msg:"Invaid Token"})
         }
+    },
+    authR: (roles)=>{
+        return (req, res, next)=>{
+            if(roles.includes(req.user.role)){
+                next()
+            }else{
+                return res.status(403).send({status:false, msg:"You're not authorized"})
+            }
+        }
     }
+
 }
 
 

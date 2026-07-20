@@ -15,6 +15,11 @@ let userSchema = mongoose.Schema({
     password:{
         type:String,
         required:true
+    },
+    role:{
+        type:String,
+        enum:['user', 'admin', 'student'],
+        default:'user'
     }
 
 }, {versionKey:false, timestamps:true})
